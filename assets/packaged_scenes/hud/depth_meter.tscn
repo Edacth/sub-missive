@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/scripts/hud/depth_meter.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/new_dynamicfont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/fonts/Roboto-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 3 )
+
+[node name="DepthMeter" type="Panel"]
+margin_top = 0.943878
+margin_right = 200.0
+margin_bottom = 50.9439
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DepthLabel" type="Label" parent="."]
+margin_right = 53.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Depth"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestLabel" type="Label" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -24.0
+margin_right = 40.0
+custom_fonts/font = ExtResource( 2 )
+text = "Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
